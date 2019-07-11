@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { HashRouter as Router, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, BrowserRouter, Route, Link } from 'react-router-dom'
 
 const Wrapper = styled.div`
   padding-top: 150px;

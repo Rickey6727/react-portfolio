@@ -5,7 +5,7 @@ import Footer from './Footer.jsx'
 import Animation from './Animation.jsx'
 import Info from './Info.jsx'
 import StyledComponent from './StyledComponent.jsx'
-import { HashRouter as Router, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, BrowserRouter, Route, Link } from 'react-router-dom'
 
 export default class App extends React.Component {
 
