@@ -14,6 +14,32 @@ const List = styled.li`
   list-style: none;
 `
 
+const Form = styled.input`
+  margin-left: 10px;
+  background-color: #ffffff00;
+  border: solid 3px #04dbfe;
+  padding: 10px;
+  width: 200px;
+  color: #ffffff;
+`
+
+const Submit = styled.input`
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  cursor: pointer;
+  outline: none;
+  margin-left: 40px;
+  padding: 0 10px;
+  appearance: none;
+  color: #ffffff;
+  transition: 0.3s;
+  &:hover {
+    color: #04dbfe;
+    border: solid 1px #04dbfe;
+    transition: 0.3s;
+  }
+`
+
 export default class LocalStateForm extends React.Component {
 
   constructor(props){
@@ -37,13 +63,12 @@ export default class LocalStateForm extends React.Component {
       <Wrapper>
         <ContentTitle>プレゼンテーショナルコンポーネントなフォーム</ContentTitle>
         <div>
-          お名前: 
-          <input type='text' ref='newText'/>
-          <input type='button' value='あいさつする' onClick={this.addMessage}/>
+          <Form type='text' ref='newText' placeholder='お名前入力してね'/>
+          <Submit type='button' value='あいさつする →' onClick={this.addMessage}/>
         </div>
         <ul>
           {this.state.messages.map( (message, i) => {
-            return <List key={i}>こんにちは、{message.title}さん。いらたい。</List>
+            return <List key={i}>こんにちは、{message.title}さん。いらっしゃい。</List>
           })}
         </ul>
       </Wrapper>

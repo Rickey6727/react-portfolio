@@ -14,6 +14,32 @@ const List = styled.li`
   list-style: none;
 `
 
+const Form = styled.input`
+  margin-left: 10px;
+  background-color: #ffffff00;
+  border: solid 3px #04dbfe;
+  padding: 10px;
+  width: 200px;
+  color: #ffffff;
+`
+
+const Submit = styled.input`
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  cursor: pointer;
+  outline: none;
+  margin-left: 40px;
+  padding: 0 10px;
+  appearance: none;
+  color: #ffffff;
+  transition: 0.3s;
+  &:hover {
+    color: #04dbfe;
+    border: solid 1px #04dbfe;
+    transition: 0.3s;
+  }
+`
+
 export default class GlobalStateForm extends React.Component {
 
   handleSubmit(e) {
@@ -26,14 +52,13 @@ export default class GlobalStateForm extends React.Component {
       <Wrapper>
         <ContentTitle>コンテナコンポーネントなフォーム</ContentTitle>
         <form onSubmit={e => this.handleSubmit(e)}>
-          お名前:
-          <input type='text' ref={(input) => this.textInput = input} placeholder={this.props.message}/>
-          <input type='submit' value='あいさつする'/>
+          <Form type='text' placeholder='お名前入力してね' ref={(input) => this.textInput = input} />
+          <Submit type='submit' value='あいさつする →'/>
         </form>
         <div className='content'>
           <ul>
             { this.props.messages.map((message) => (
-                <List>こんにちは、{ Object.values(message) }さん。いらたい。</List>
+                <List>こんにちは、{ Object.values(message) }さん。初めまして。</List>
               ))
             }
           </ul>
