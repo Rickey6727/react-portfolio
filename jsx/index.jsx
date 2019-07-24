@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 class App extends React.Component {
   constructor(props) { 
     super(props)
-    this.state = { message: 'Hello React on Github Pages (　˙-˙　)y' }
+    this.state = { message: 'Hello React on Github Pages (　˙-˙　)y~' }
   }
 
   onChange(e) {
