@@ -1,10 +1,7 @@
 require('@babel/register');
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
- 
     entry: {
         "app": "./jsx/index.jsx",
     },
@@ -27,12 +24,5 @@ module.exports = {
                 }
             }
         ]
-    },
-
-    plugins: [
-        new HtmlWebpackPlugin({
-        template: 'index.html',
-        filename: 'index.html'
-        })
-    ]
+    }
 };
