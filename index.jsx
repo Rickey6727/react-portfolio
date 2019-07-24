@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 class App extends React.Component {
   constructor(props) { 
     super(props)
-    this.state = { message: 'something' }
+    this.state = { message: 'hello' }
   }
 
   onChange(e) {
