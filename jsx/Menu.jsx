@@ -4,6 +4,7 @@ import { HashRouter as Router, BrowserRouter, Route, Link } from 'react-router-d
 
 const Wrapper = styled.div`
   padding-top: 150px;
+  z-index:9999;
 `
 
 const MenuStyle = styled.div`

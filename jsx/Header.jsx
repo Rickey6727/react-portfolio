@@ -4,11 +4,11 @@ import { HashRouter as Router, BrowserRouter, Route, Link } from 'react-router-d
 
 const HeaderStyle = styled.div`
   width: 100vw;
-  height: 150px;
   color: #00dbfe;
   text-align: center;
   position: fixed;
   background-color: #141414e6;
+  z-index:9998;
 `
 
 const Text = styled.h1`
