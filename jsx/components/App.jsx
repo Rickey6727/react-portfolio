@@ -6,7 +6,6 @@ import Animation from './Animation.jsx'
 import Info from './Info.jsx'
 import StyledComponent from './StyledComponent.jsx'
 import Redux from './Redux.jsx'
-import Next from './Next.jsx'
 import ComponentLifeCycle from './ComponentLifeCycle.jsx'
 import { HashRouter as Router, BrowserRouter, Route, Link } from 'react-router-dom'
 
@@ -21,7 +20,6 @@ export default class App extends React.Component {
           <Route path='/styled-component' exact component={StyledComponent} />
           <Route path='/animation' exact component={Animation} />
           <Route path='/redux' exact component={Redux} />
-          <Route path='/next' exact component={Next} />
           <Route path='/component-life-cycle' exact component={ComponentLifeCycle} />
         </Router>
         <Footer />

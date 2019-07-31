@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import {useSpring, animated} from 'react-spring'
-import GSAP from 'react-gsap-enhancer'
 import { TimelineMax } from 'gsap'
 
 const Wrapper = styled.div`

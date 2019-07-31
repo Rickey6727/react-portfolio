@@ -14,6 +14,9 @@ const List = styled.li`
   list-style: none;
 `
 
+const StudyContext = styled.p`
+`
+
 const Form = styled.input`
   margin-left: 10px;
   background-color: #ffffff00;
@@ -51,6 +54,7 @@ export default class GlobalStateForm extends React.Component {
     return (
       <Wrapper>
         <ContentTitle>コンテナコンポーネントなフォーム</ContentTitle>
+        <StudyContext>Unmountingしても初期化されない</StudyContext>
         <form onSubmit={e => this.handleSubmit(e)}>
           <Form type='text' placeholder='お名前入力してね' ref={(input) => this.textInput = input} />
           <Submit type='submit' value='あいさつする →'/>

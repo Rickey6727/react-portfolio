@@ -14,6 +14,9 @@ const List = styled.li`
   list-style: none;
 `
 
+const StudyContext = styled.p`
+`
+
 const Form = styled.input`
   margin-left: 10px;
   background-color: #ffffff00;
@@ -62,6 +65,8 @@ export default class LocalStateForm extends React.Component {
     return (
       <Wrapper>
         <ContentTitle>プレゼンテーショナルコンポーネントなフォーム</ContentTitle>
+        <StudyContext>Unmountingしても初期化される
+        </StudyContext>
         <div>
           <Form type='text' ref='newText' placeholder='お名前入力してね'/>
           <Submit type='button' value='あいさつする →' onClick={this.addMessage}/>

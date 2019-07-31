@@ -12,6 +12,7 @@ const MenuStyle = styled.div`
   position: fixed;
   top: 100px;
   background-color: #00dbfe;
+  z-index: 9999;
 `
 
 const LinkStyle = styled.div`
@@ -41,7 +42,6 @@ export default class Menu extends React.Component {
             <Link to='/styled-component'><LinkStyle>styled-component</LinkStyle></Link>
             <Link to='/animation'><LinkStyle>Animation</LinkStyle></Link>
             <Link to='/redux'><LinkStyle>Redux</LinkStyle></Link>
-            <Link to='/next'><LinkStyle>Next.js</LinkStyle></Link>
             <Link to='/component-life-cycle'><LinkStyle>ComponentLifeCycle</LinkStyle></Link>
           </Router>
         </MenuStyle>
